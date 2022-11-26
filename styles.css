@@ -4,49 +4,55 @@
 }
 
 main {
-    align-items: center;
-    display: flex;
     height: 100vh;
-    justify-content: center;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .traffic-lights {
-    align-items: center;
     background-color: rgb(58, 58, 61);
-    border-radius: 20px;
+    height: 540px;
+    width: 280px;
     display: flex;
     flex-direction: column;
-    height: 540px;
+    align-items: center;
     justify-content: space-evenly;
-    width: 280px;
+    border-radius: 20px;
 }
 
 .traffic-light {
-    border-radius: 50%;
     height: 120px;
     width: 120px;
+    border-radius: 50%;
+    box-shadow: none;
+    transition: all .5s ease;
 }
 
 .red{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.295);
 }
 .red.active {
-    box-shadow: 0px 0px 20px 10px red;
+    box-shadow: 0px 0px 30px 10px red;
+    background-color: red;
 }
 
 .orange {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.342);
 }
 
 .orange.active {
-    box-shadow: 0px 0px 20px 10px yellow;
+    box-shadow: 0px 0px 30px 10px yellow;
+    background-color: yellow;
 }
 
 .green {
-    background-color: green;
+    background-color: rgba(48, 235, 48, 0.301);
+    
 }
 
 .green.active {
-    box-shadow: 0px 0px 20px 10px green;
+    box-shadow: 0px 0px 30px 10px rgb(48, 235, 48);
+    background-color: rgb(48, 235, 48);
 }

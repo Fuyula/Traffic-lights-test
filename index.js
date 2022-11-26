@@ -22,7 +22,7 @@ async function changeSingleLight( color, duration ) {
 //Loop through traffic lights
 async function changeLights( lights, currentLightColor ) {
     let isFirstTime = true;
-    let orderedLights = [lights[0], lights[2], lights[1]]
+    const orderedLights = [lights[0], lights[2], lights[1]]
     while ( true ){
         for( i = 0; i < orderedLights.length; i++) {
             const { color, duration } = orderedLights[i];
